@@ -8,17 +8,18 @@ It uses convolutional networks where frames are processed by 3 convolution layer
 Calculates next state to process using the bellman equation
 
 # Algorithm
-  
+  <pre>
   <br />Initialise Space Invaders environment
   <br />Initialise replay memory M with capacity N
-  <br />INisialise the DQN weights
+  <br />Inisialise the DQN weights
   <br />for episode in max episode
-    s = environment state
-    for steps in maxsteps
-      choose action a from state using epsilon greedy
-      Take action a, get r(reward) and s(next state)
-      Store experience tuple<a,a,r,s> in M
-      s = s'(state = newstate)
-      Get random minibatch of exp tuples from M
-      Set Q_target = reward(s,a) + ymaxQ('s')
-      update w= alpha(Qtarget - Qvalue)*change in Qvalue
+    <br />s = environment state
+    <br />for steps in maxsteps
+      <br />choose action a from state using epsilon greedy
+      <br />Take action a, get r(reward) and s(next state)
+      <br />Store experience tuple<a,a,r,s> in M
+      <br />s = s'(state = newstate)
+      <br />Get random minibatch of exp tuples from M
+      <br />Set Q_target = reward(s,a) + ymaxQ('s')
+      <br />update w= alpha(Qtarget - Qvalue)*change in Qvalue
+  </pre>
