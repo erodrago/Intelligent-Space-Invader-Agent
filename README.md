@@ -9,8 +9,8 @@ Calculates next state to process using the bellman equation
 
 # Algorithm
   
-  /n Initialise Space Invaders environment
-  /n Initialise replay memory M with capacity N
+  \n Initialise Space Invaders environment
+  \n Initialise replay memory M with capacity N
   INisialise the DQN weights
   for episode in max episode
     s = environment state
