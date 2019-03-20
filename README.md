@@ -9,10 +9,10 @@ Calculates next state to process using the bellman equation
 
 # Algorithm
   
-  \n Initialise Space Invaders environment
-  \n Initialise replay memory M with capacity N
-  INisialise the DQN weights
-  for episode in max episode
+  <br />Initialise Space Invaders environment
+  <br />Initialise replay memory M with capacity N
+  <br />INisialise the DQN weights
+  <br />for episode in max episode
     s = environment state
     for steps in maxsteps
       choose action a from state using epsilon greedy
